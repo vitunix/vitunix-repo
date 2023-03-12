@@ -33,22 +33,20 @@ echo -e "${BCyan}####################################${Color_Off}"
 
 # old files to be removed! #
 declare -a OLD_DATABASE=(
-						 
-						 'vitunix-repo.db'
-						 'vitunix-repo.db.tar.gz'
-						 'vitunix-repo.db.tar.gz.old'
-						 'vitunix-repo.files'
-						 'vitunix-repo.files.tar.gz'
-						 'vitunix-repo.files.tar.gz.old'
-						
-						)
+  'vitunix-repo.db'
+  'vitunix-repo.db.tar.gz'
+  'vitunix-repo.db.tar.gz.old'
+  'vitunix-repo.files'
+  'vitunix-repo.files.tar.gz'
+  'vitunix-repo.files.tar.gz.old'
+)
 
 # remove old files #
 echo -e "${BRed}\n[*] Removing Old database Files...\n${Color_Off}"
 
 for i in ${OLD_DATABASE[@]}; do
 
-	rm $i
+  rm $i
 
 done
 
